@@ -4,6 +4,11 @@ interested in both what the backend and frontend code will look like. I'm also i
 tinker interactively where useful (like messing with JWTs). I'll be skipping HTTPS for simplicity as not intended
 to be a production setup. I'll also be skipping a DB query and hardcoding that data as well in the server.
 
+## Note about AI:
+Since it's 2026 and no one will be doing code completely by hand going forward (short probably for a challenge or due
+to a hard requirement), I'll be using Grok, and possibly Codeium, for initial boilerplate examples and retool from 
+there as needed.
+
 ## Signing Algos:
 - HS256 = HMAC SHA-256 (1-key system).
 - RS256 = RSA SHA-256 (2-key system).
