@@ -1,0 +1,5 @@
+# PyCharm adds a .gitignore under .venv. Putting here anyway.
+# If .idea files don't show as ignored in GUI see this:
+# https://www.codegenes.net/blog/git-still-shows-files-as-modified-after-adding-to-gitignore/
+.idea/
+.venv/
