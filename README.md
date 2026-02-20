@@ -1,19 +1,21 @@
 # Authentication Tinker
-This project is simply me tinkering and (re)learning Basic Authentication, Bearer Authentication, and JWTs. I'm 
-interested in both what the backend and frontend code will look like. I'm also interested in providing a means to
-tinker interactively where useful (like messing with JWTs). I'll be skipping HTTPS for simplicity as not intended
-to be a production setup. I'll also be skipping a DB query and hardcoding that data as well in the server.
+This project is an exploratory and (re)learning Basic Authentication, Bearer Authentication, and JWTs. I'm 
+interested in both what the backend and frontend code will look like in 2026. I'm also interested in providing a 
+means to modify data interactively where useful (like messing with JWTs). 
+
+I'll be skipping HTTPS for simplicity as this is not intended to be production code. I'll also be skipping a DB 
+query and hardcoding that data as well in the server (including mock UN/PW without using a gitignored settings file).
 
 ## Note about AI:
 Since it's 2026 and no one will be doing code completely by hand going forward (short probably for a challenge or due
 to a hard requirement), I'll be using Grok, and possibly Codeium, for initial boilerplate examples and retool from 
-there as needed.
+there as desired.
 
 ## Signing Algos:
 - HS256 = HMAC SHA-256 (1-key system).
 - RS256 = RSA SHA-256 (2-key system).
 
-## Initial plan:
+## Initial plan (In no particular order):
 1. Hack together a quick python webserver.
    1. Monitor output.
    2. Backend auth code as needed.
