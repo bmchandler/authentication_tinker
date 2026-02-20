@@ -3,4 +3,6 @@ name = "authenication-exploratory"
 version = "0.1.0"
 description = "Exploration for deeper understanding of authentication mechanisms."
 requires-python = ">=3.13"
-dependencies = []
+dependencies = [
+    "flask>=3.1.3",
+]
