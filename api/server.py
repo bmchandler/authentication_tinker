@@ -19,6 +19,10 @@ def get_private_basic():
     # TODO: Implement basic auth check.
     return "Not yet implemented."
 
+@api.route('/users', methods=['GET'])
+def get_users():
+    return f"Some list of users"
+
 @api.route('/users/<int:user_id>', methods=['GET'])
 def get_user_by_id(user_id):
     return f"User ID: {user_id}"
