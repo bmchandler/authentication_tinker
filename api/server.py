@@ -1,4 +1,4 @@
-from flask import Flask, jsonify
+from flask import Flask, jsonify, request
 
 api = Flask(__name__)
 
@@ -22,6 +22,14 @@ def get_private_basic():
 @api.route('/users/<int:user_id>', methods=['GET'])
 def get_user_by_id(user_id):
     return f"User ID: {user_id}"
+
+@api.route('/items', methods=['GET', 'POST'])
+def handle_items():
+    if request.method == 'GET':
+        return f"Some list of items"
+    elif request.method == 'POST':
+        return f"New item added"
+    return None
 
 if __name__ == '__main__':
     api.run(debug=True)
