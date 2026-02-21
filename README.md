@@ -11,6 +11,11 @@ Since it's 2026 and no one will be doing code completely by hand going forward (
 to a hard requirement), I'll be using Grok, and possibly Codeium, for initial boilerplate examples and retool from 
 there as desired.
 
+## Note about integration tests:
+To keep things simple, I'm manually testing API endpoints w/Bruno.<br>
+See: https://www.usebruno.com/downloads
+
+
 ## Signing Algos:
 - HS256 = HMAC SHA-256 (1-key system).
 - RS256 = RSA SHA-256 (2-key system).
