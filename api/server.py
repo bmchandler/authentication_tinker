@@ -1,6 +1,6 @@
 from flask import Flask, jsonify
 
-api = Flask("API Server")
+api = Flask(__name__)
 
 @api.route('/', methods=['GET'])
 def get_root():
