@@ -31,10 +31,11 @@ def get_user_by_id(user_id):
 @api.route('/items', methods=['GET', 'POST'])
 def handle_items():
     if request.method == 'GET':
-        #return f"Some list of items"
         return jsonify(data.items)
     elif request.method == 'POST':
-        return jsonify({'message': 'Item created'}), 201
+        post_data = request.get_json()
+        post_data['id'] = 111
+        return jsonify(post_data), 201
     return None
 
 if __name__ == '__main__':
