@@ -34,7 +34,7 @@ def handle_items():
         #return f"Some list of items"
         return jsonify(data.items)
     elif request.method == 'POST':
-        return f"New item added"
+        return jsonify({'message': 'Item created'}), 201
     return None
 
 if __name__ == '__main__':
