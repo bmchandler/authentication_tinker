@@ -1,4 +1,5 @@
 from flask import Flask, jsonify, request
+import api.data as data
 
 api = Flask(__name__)
 
@@ -21,7 +22,7 @@ def get_private_basic():
 
 @api.route('/users', methods=['GET'])
 def get_users():
-    return f"Some list of users"
+    return jsonify(data.users)
 
 @api.route('/users/<int:user_id>', methods=['GET'])
 def get_user_by_id(user_id):
@@ -30,7 +31,8 @@ def get_user_by_id(user_id):
 @api.route('/items', methods=['GET', 'POST'])
 def handle_items():
     if request.method == 'GET':
-        return f"Some list of items"
+        #return f"Some list of items"
+        return jsonify(data.items)
     elif request.method == 'POST':
         return f"New item added"
     return None
